@@ -13,7 +13,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
-public class imageCompressor {
+public class imagecompressor {
 
     private final JFrame frame;
     private final JProgressBar overallProgressBar;
@@ -28,7 +28,7 @@ public class imageCompressor {
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
             try {
-                ImageCompressor window = new ImageCompressor();
+                imagecompressor window = new imagecompressor();
                 window.frame.setVisible(true);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -36,7 +36,7 @@ public class imageCompressor {
         });
     }
 
-    public ImageCompressor() {
+    public imagecompressor() {
         frame = new JFrame();
         frame.setTitle("Image Converter");
         frame.setBounds(100, 100, 600, 400);
